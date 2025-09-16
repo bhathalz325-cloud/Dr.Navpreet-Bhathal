@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr. Navpreet Bhathal</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon (optional, replace favicon.png in public folder) -->
+    <link rel="icon" href="favicon.png" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #e4ecf4);
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        padding: 60px 20px 20px;
+        background: #003366;
+        color: white;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      header p {
+        margin: 10px 0 0;
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      main {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+      }
+
+      img.profile {
+        max-width: 220px;
+        border-radius: 20px;
+        margin: 20px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <footer>
+      © <span id="year"></span> Dr. Navpreet Bhathal | All Rights Reserved
+    </footer>
+
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
